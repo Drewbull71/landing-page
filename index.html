@@ -9,18 +9,17 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: #f9f9fb;
       color: #0a1f44;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       min-height: 100vh;
       text-align: center;
     }
     img {
       max-width: 200px;
-      margin-top: 40px;
+      margin: 40px 0 10px;
     }
     h1 {
       font-size: 2.5rem;
@@ -29,16 +28,16 @@
     p {
       font-size: 1.2rem;
       max-width: 600px;
-      margin-bottom: 30px;
-      padding: 0 15px;
+      margin: 0 20px 30px;
     }
     form {
-      background: #fff;
+      background: #ffffff;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
       width: 90%;
       max-width: 500px;
+      margin-bottom: 40px;
     }
     input, textarea {
       width: 100%;
@@ -47,16 +46,19 @@
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 1rem;
+      box-sizing: border-box;
     }
     button {
       background-color: #ff9800;
       color: white;
       border: none;
-      padding: 15px 25px;
+      padding: 14px 28px;
       font-size: 1rem;
+      font-weight: bold;
       border-radius: 30px;
       cursor: pointer;
       transition: background 0.3s ease;
+      margin-top: 10px;
     }
     button:hover {
       background-color: #e68900;
@@ -69,4 +71,10 @@
   <p>Your family’s future deserves more than just hope. It deserves a plan. Let All-Star Life Group help you secure peace of mind with life insurance that fits.</p>
   
   <form action="https://formspree.io/f/xanerqyn" method="POST">
-    <input type="text" name="name
+    <input type="text" name="name" placeholder="Your Full Name" required />
+    <input type="email" name="email" placeholder="Your Email Address" required />
+    <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+    <button type="submit">Get a Free Quote</button>
+  </form>
+</body>
+</html>
